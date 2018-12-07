@@ -17,7 +17,7 @@ blocks:
   - name: "Build"
     task:
       jobs:
-      - name: Docker build
+      - name: Maven build
         commands:
           - checkout
           - echo "Building the project"
