@@ -38,4 +38,8 @@ jobs:
       - store_test_results:
           path: ./target/surefire-reports
 
-
+workflows:
+  version: 2
+  workflow:
+    jobs:
+    - build
