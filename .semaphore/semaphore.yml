@@ -13,6 +13,11 @@ blocks:
         commands:
           - checkout
           - mvn verify
+        matrix:
+          - env_var: AAA
+            values: ["1", "2", "3"]
+          - env_var: BBB
+            values: ["a", "b"]
 
   - name: "Build"
     task:
