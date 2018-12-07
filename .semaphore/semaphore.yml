@@ -3,7 +3,7 @@ name: Build zt-zip
 agent:
   machine:
     type: e1-standard-2
-    os_image: maven:latest
+    os_image: ubuntu1804
 
 blocks:
   - name: "Verify build"
