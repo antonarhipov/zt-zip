@@ -6,10 +6,10 @@ agent:
     os_image: maven:latest
 
 blocks:
-  - name: "RVerify build"
+  - name: "Verify build"
     task:
       jobs:
-      - name: Smoke
+      - name: Verify
         commands:
           - checkout
           - mvn verify
