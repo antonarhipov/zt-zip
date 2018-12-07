@@ -35,3 +35,7 @@ jobs:
       # run tests!
       - run: mvn -DskipTests=true -Dmaven.javadoc.skip=true clean package
 
+      - store_test_results:
+          path: test-results
+
+
