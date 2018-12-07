@@ -33,7 +33,7 @@ jobs:
           key: v1-dependencies-{{ checksum "pom.xml" }}
         
       # run tests!
-      - run: mvn -Dmaven.javadoc.skip=true clean package
+      - run: mvn -Dmaven.test.skip=true -Dmaven.javadoc.skip=true clean package
 
       - store_test_results:
           path: ./target/surefire-reports
