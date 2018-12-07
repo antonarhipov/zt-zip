@@ -18,6 +18,8 @@ blocks:
             values: ["1", "2", "3"]
           - env_var: BBB
             values: ["a", "b"]
+          - env_var: CCC
+            values: ["a1", "b1"]
 
   - name: "Build"
     task:
